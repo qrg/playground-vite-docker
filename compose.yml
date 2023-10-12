@@ -1,0 +1,25 @@
+services:
+  front:
+    build:
+      context: ./
+      args:
+        - NODE_VERSION
+        - PNPM_VERSION
+    volumes:
+      - ./:/shared
+      - node-modules:/shared/node_modules
+      - pnpm-store:/shared/.pnpm-store
+    working_dir: /shared
+    ports:
+      - '5006:3000'
+      - '3001:3001'
+    environment:
+      HOST: 0.0.0.0
+      IS_DOCKER: true
+    env_file:
+      - .env
+    command: sh -c 'pnpm install --frozen-lockfile && pnpm dev'
+
+volumes:
+  node-modules:
+  pnpm-store:
