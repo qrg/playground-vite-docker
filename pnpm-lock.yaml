@@ -5,12 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
-  '@types/node':
-    specifier: 16.18.58
-    version: 16.18.58
-  typescript:
-    specifier: 5.2.2
-    version: 5.2.2
   vite:
     specifier: 2.9.16
     version: 2.9.16
@@ -25,10 +19,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /@types/node@16.18.58:
-    resolution: {integrity: sha512-YGncyA25/MaVtQkjWW9r0EFBukZ+JulsLcVZBlGUfIb96OBMjkoRWwQo5IEWJ8Fj06Go3GHw+bjYDitv6BaGsA==}
-    dev: true
 
   /esbuild-android-64@0.14.54:
     resolution: {integrity: sha512-Tz2++Aqqz0rJ7kYBfz+iqyE3QMycD4vk7LBRyWaAVFgFtQ/O8EJOnVmTOiDWYZ/uYzB4kvP+bqejYdVKzE5lAQ==}
@@ -306,12 +296,6 @@ packages:
   /supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
-    dev: true
-
-  /typescript@5.2.2:
-    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
-    engines: {node: '>=14.17'}
-    hasBin: true
     dev: true
 
   /vite@2.9.16:
