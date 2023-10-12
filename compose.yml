@@ -12,7 +12,7 @@ services:
     working_dir: /shared
     ports:
       - '5006:3000'
-      - '3001:3001'
+      - '6006:3001'
     environment:
       HOST: 0.0.0.0
       IS_DOCKER: true

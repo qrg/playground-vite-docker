@@ -1,12 +1,12 @@
 import { defineConfig, UserConfig } from 'vite'
 
-const isDocker = process.env.IS_DOCKER === 'true'
+const isDocker = () => process.env.IS_DOCKER === 'true'
 
 export default defineConfig({
   root: 'src',
   server: {
     hmr: {
-      clientPort: 3001,
+      clientPort: isDocker() ? 6006 : 3001,
       port: 3001
     },
     host: '0.0.0.0',
